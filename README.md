@@ -1,1 +1,1 @@
-odin project challenge tomake an etch-a-sketch webapp
+odin project challenge to make an etch-a-sketch webapp
