@@ -1,8 +1,10 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 .header,
@@ -11,31 +13,50 @@ body {
   background-color: salmon;
 }
 
+.header{
+  margin-bottom: 10px;
+}
+
 .body {
   flex: 1;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+
+button {
+  font-size: 14pt;
+  border: 0;
+  border-radius: 8px;
+  background-color: salmon;
+  padding: 16px 32px;
 }
 
 .grid-container {
+  margin: 10vw;
+  flex: 1;
   border: 2px solid  salmon;
-  width: 60%;
-  height: 60%;
+  width: 70vw;
+  max-width: calc(100vh - 186px - 14pt - 20vw);
+  max-height: 70vw;
+  height: 70vw;
   display: flex;
   flex-direction: column;
-  gap: 5px;
 }
 
 .column,
 .row {
-  border: 1px solid black;
   flex: 1;
 }
 
 .row {
   display: flex;
-  gap: 5px;
+}
+
+.column {
+  margin: 1px;
+  border: 1px solid grey;
 }
 
 .colored {
